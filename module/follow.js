@@ -1,7 +1,7 @@
 // 关注与取消关注用户
 
 module.exports = (query, request) => {
-  query.cookie.os = 'pc'
+  // query.cookie.os = 'pc'
   query.t = query.t == 1 ? 'follow' : 'delfollow'
   return request(
     'POST',
